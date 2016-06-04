@@ -1,0 +1,24 @@
+div {
+	border: 1px solid black;
+	margin: 0 auto auto;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto auto;
+}
+
+.title {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#dropDown {
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+#control {
+	height: 200px;
+	background-color: grey;
+}
