@@ -1,7 +1,10 @@
 div {
-	border: 1px solid black;
 	margin: 0 auto auto;
 	text-align: center;
+}
+
+img {
+	height: 50px;
 }
 
 .container {
@@ -19,6 +22,18 @@ div {
 }
 
 #control {
-	height: 200px;
-	background-color: grey;
+	height: 230px;
+	background-color: #E3E0E1;
+}
+
+#searchButton {
+	width: 100px;
+}
+
+#icons1 {
+	margin-top: 40px;
+}
+
+#icons2 {
+	margin-top: 40px;
 }

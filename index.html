@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Logo Search</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Logo Search</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </head>
 <body>
-	<div class="title">
-		<h1>Society Education Programs</h1>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">.col-md-2</div>
-			<div class="col-md-8" id="control">
-				Control
-				<div class="row" id="dropDown">
-					<div class="col-md-6">Stupid</div>
-					<div class="col-md-6">Stupid</div>
-				</div>
-				<div class="row" id="searchButton">
-					<div class="col-md-12">Stupid</div>
-				</div>
-			</div>	
-		</div>	
-		<div class="row">
-			<div class="col-md-2">.col-md-2</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">.col-md-2</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">.col-md-2</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-			<div class="col-md-2">Stupid</div>
-		</div>
-	</div>
-		
+    <div class="title">
+        <h1>Society Education Programs</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="control">
+                <p>&nbsp</p>
+                <div class="row" id="dropDown">
+                    <div class="col-md-6">
+                      <select class="form-control" id="programType">
+                        <option>Program Type</option>
+                        <option value="searchAll">Search All</option>
+                        <option value="scholarshipProgram">Scholarship Program</option>
+                        <option value="loanProgram">Loan Program</option>  
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <select class="form-control" id="educationLevel">
+                        <option>Education Level</option>
+                        <option value="searchAll">Search All</option>
+                        <option value="k-12">K-12</option>
+                        <option value="highSchool">High School</option>  
+                      </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><button type="button" class="btn btn-default btn-sm" id="searchButton">Search</button></div>
+                </div>
+            </div>  
+        </div>  
+        <div class="row" id="icons1">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img id="icon1" src="Logos for search project/aci.png"></div>
+            <div class="col-md-2"><img id="icon2" src="Logos for search project/acm - fade copy 2.png"></div>
+            <div class="col-md-2"><img id="icon3" src="Logos for search project/AFE - fade.png"></div>
+            <div class="col-md-2"><img id="icon4" src="Logos for search project/aci.png"></div>
+        </div>
+        <div class="row" id="icons2">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img id="icon5" src="Logos for search project/acm - fade copy 2.png"></div>
+            <div class="col-md-2"><img id="icon6" src="Logos for search project/AFE - fade.png"></div>
+            <div class="col-md-2"><img id="icon7" src="Logos for search project/aci.png"></div>
+            <div class="col-md-2"><img id="icon8" src="Logos for search project/acm - fade copy 2.png"></div>
+        </div>
+        <div class="row" id="icons2">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img id="icon9" src="Logos for search project/AFE - fade.png"></div>
+            <div class="col-md-2"><img id="icon10" src="Logos for search project/aci.png"></div>
+            <div class="col-md-2"><img id="icon11" src="Logos for search project/acm - fade copy 2.png"></div>
+            <div class="col-md-2"><img id="icon12" src="Logos for search project/AFE - fade.png"></div>
+        </div>
+        <div class="row" id="icons2">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img id="icon13" src="Logos for search project/aci.png"></div>
+            <div class="col-md-2"><img id="icon14" src="Logos for search project/acm - fade copy 2.png"></div>
+            <div class="col-md-2"><img id="icon15" src="Logos for search project/AFE - fade.png"></div>
+            <div class="col-md-2"><img id="icon16" src="Logos for search project/aci.png"></div>
+        </div>
+    </div>
+        
 </body>
 </html>
