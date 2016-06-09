@@ -1,62 +1,45 @@
 $(document).ready(function() {
 	
 	function chooseType() {
-		var programType = {
-			searchAll: {
-				scholarshipProgram: $('.icon1, .icon3, .icon4, .icon7, .icon10, .icon16'),
-				loanProgram: $('.icon2, .icon5, .icon6, .icon9, .icon11, .icon15'),
-			}
-		}
 
-		var educationLevel = {
-			searchAll: {
-				k12: $('.icon8, .icon12, .icon13, .icon6, .icon10, .icon1, .icon16'),
-				highSchool: $('.icon2, .icon3, .icon4, .icon5, .icon7, .icon9, .icon11, .icon14, #icon15'),
-			}
+		function setIcons() {
+			$('.aci').append('<img src="Logos for search project/aci.png">');
+			$('.acm').append('<img src="Logos for search project/acm - fade copy 2.png">');
+			$('.afe').append('<img src="Logos for search project/AFE - fade.png">');
 		}
 
 		function getType() {
+
 			if ($('#programType').val() == "searchAll") {
-				$(programType.searchAll.scholarshipProgram).hide();
-				imageSwap();
-				$(programType.searchAll.loanProgram).hide();
-				imageSwap();
+				$('.scholarshipProgram, .loanProgram').css(testcss());
 			}
 			else if ($('#programType').val() == "scholarshipProgram") {
-				$(programType.searchAll.scholarshipProgram).hide();
-				imageSwap();
+				$('.scholarshipProgram').css({"background-image": "url('Logos for search project/aci - color.png')"});	
 			}
 			else if ($('#programType').val() == "loanProgram") {
-				$(programType.searchAll.loanProgram).hide();
-				imageSwap();
+				$('.loanProgram').css({"background-image": "url('Logos for search project/aci - color.png')"});	
 			}
 		}
 
 		function getLevel() {
 			if ($('#educationLevel').val() == "searchAll") {
-				$(educationLevel.searchAll.k12).hide();
-				imageSwap();
-				$(educationLevel.searchAll.highSchool).hide();
-				imageSwap();
+				$('.k12, .highSchool').css({"background-image": "url('Logos for search project/aci - color.png')"});
 			}
 			else if ($('#educationLevel').val() == "k-12") {
-				$(educationLevel.searchAll.k12).hide();
-				imageSwap();
+				$('.k12').css({"background-image": "url('Logos for search project/aci - color.png')"});
 			}
 			else if ($('#educationLevel').val() == "highSchool") {
-				$(educationLevel.searchAll.highSchool).hide();
-				imageSwap();
+				$('.highSchool').css({"background-image": "url('Logos for search project/aci - color.png')"});
 			}
 		}
 
-		function imageSwap() {
-		    var aciColor = '<img id="icon1" src="Logos for search project/aci - color.png">';
-			var acmColor = '<img id="icon1" src="Logos for search project/acm - color.png">';
-			var afeColor = '<img id="icon1" src="Logos for search project/AFE coco.png">';
-			if ($('img').attr('class') == 'aci') {
-				console.log(this);
-			}
+		function testcss() {
+			var test1 = {"background-image": "url('Logos for search project/aci - color.png')"};
+			var test2 = {"background-image": "url('Logos for search project/acm - color.png')"};
+			console.log(this);
+			
 		}
+
 		
 		$('#searchButton').click(function () {
 			getType();
