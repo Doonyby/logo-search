@@ -17,26 +17,20 @@ $(document).ready(function() {
 			// $('#acmImg').append('<img src="Logos for search project/acm - color.png">');
 			// $('#afeImg').append('<img src="Logos for search project/AFE color.png">');
 
-		}
+		//}
 
 		function getType() {
 
-			if ($('#programType').val() == "searchAll") {
-				$('.scholarshipProgram, .loanProgram').find('.aciImg').replaceWith('<img src="Logos for search project/aci - color.png">');
-			}
-			else if ($('#programType').val() == "scholarshipProgram") {
+			if ($('#programType').val() == "scholarshipProgram") {
 				$('.scholarshipProgram')
 			}
 			else if ($('#programType').val() == "loanProgram") {
-				$('.loanProgram')
+				$('.loanProgram').find('.aciImg').replaceWith('<img src="Logos for search project/aci - color.png">');
 			}
 		}
 
 		function getLevel() {
-			if ($('#educationLevel').val() == "searchAll") {
-				$('.k12, .highSchool')
-			}
-			else if ($('#educationLevel').val() == "k-12") {
+			if ($('#educationLevel').val() == "k-12") {
 				$('.k12')
 			}
 			else if ($('#educationLevel').val() == "highSchool") {
