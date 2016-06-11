@@ -5,6 +5,7 @@ div {
 
 .aci, .acm, .afe {
 	height: 60px;
+	background-repeat: no-repeat;
 }
 
 img {
@@ -14,6 +15,26 @@ img {
 .container {
 	margin: 0 auto auto;
 }
+
+.aci, .inColor {
+	background-image: url("../images/aci-color.png");
+}
+.aci {
+	background-image: url("../images/aci.png");
+}
+.acm, .inColor {
+	background-image: url("../images/acm-color.png");
+}
+.acm {
+	background-image: url("../images/acm.png");
+}
+.afe, .inColor {
+	background-image: url("../images/afe-color.png");
+}
+.afe {
+	background-image: url("../images/afe.png");
+}
+
 
 .title {
 	margin-top: 50px;

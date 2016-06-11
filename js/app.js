@@ -2,27 +2,11 @@ $(document).ready(function() {
 	
 	function chooseType() {
 
-		function setIcons() {
-			$('.aci').append('<img class="aciImg" src="Logos for search project/aci.png">');
-			$('.acm').append('<img class="acmImg" src="Logos for search project/acm - fade copy 2.png">');
-			$('.afe').append('<img class="afeImg" src="Logos for search project/AFE - fade.png">');
-		}
-
-		// function changeIcons() {
-		// 	$('.aciImg').hide()
-		// 	$('.acmImg').hide()
-		// 	$('.afeImg').hide()
-
-			// $('#aciImg').append('<img src="Logos for search project/aci - color.png">');
-			// $('#acmImg').append('<img src="Logos for search project/acm - color.png">');
-			// $('#afeImg').append('<img src="Logos for search project/AFE color.png">');
-
-		//}
 
 		function getType() {
 
 			if ($('#programType').val() == "scholarshipProgram") {
-				$('.scholarshipProgram')
+				$('.scholarshipProgram').addClass('inColor');
 			}
 			else if ($('#programType').val() == "loanProgram") {
 				$('.loanProgram').find('.aciImg').replaceWith('<img src="Logos for search project/aci - color.png">');
@@ -37,14 +21,20 @@ $(document).ready(function() {
 				$('.highSchool')
 			}
 		}
-
-		
+	
 		$('#searchButton').click(function () {
 			getType();
 			getLevel();
 
 		});
-		setIcons();
+
+// get submit event
+// remove class inColor from icon
+// check value of program type
+// select class
+// set class inColor for 
+
+
 	}
 	chooseType();
 });
