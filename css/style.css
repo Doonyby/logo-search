@@ -5,21 +5,10 @@ div {
 
 .aci, .acm, .afe {
 	height: 60px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 50px;
 }
 
-.aci {
-	background-image: url("../Logos for search project/aci.png");
-}
-
-.acm {
-	background-image: url("../Logos for search project/acm - fade copy 2.png");
-}
-
-.afe {
-	background-image: url("../Logos for search project/AFE - fade.png");
+img {
+	height: 50px;
 }
 
 .container {

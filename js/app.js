@@ -3,41 +3,45 @@ $(document).ready(function() {
 	function chooseType() {
 
 		function setIcons() {
-			$('.aci').append('<img src="Logos for search project/aci.png">');
-			$('.acm').append('<img src="Logos for search project/acm - fade copy 2.png">');
-			$('.afe').append('<img src="Logos for search project/AFE - fade.png">');
+			$('.aci').append('<img class="aciImg" src="Logos for search project/aci.png">');
+			$('.acm').append('<img class="acmImg" src="Logos for search project/acm - fade copy 2.png">');
+			$('.afe').append('<img class="afeImg" src="Logos for search project/AFE - fade.png">');
+		}
+
+		// function changeIcons() {
+		// 	$('.aciImg').hide()
+		// 	$('.acmImg').hide()
+		// 	$('.afeImg').hide()
+
+			// $('#aciImg').append('<img src="Logos for search project/aci - color.png">');
+			// $('#acmImg').append('<img src="Logos for search project/acm - color.png">');
+			// $('#afeImg').append('<img src="Logos for search project/AFE color.png">');
+
 		}
 
 		function getType() {
 
 			if ($('#programType').val() == "searchAll") {
-				$('.scholarshipProgram, .loanProgram').css(testcss());
+				$('.scholarshipProgram, .loanProgram').find('.aciImg').replaceWith('<img src="Logos for search project/aci - color.png">');
 			}
 			else if ($('#programType').val() == "scholarshipProgram") {
-				$('.scholarshipProgram').css({"background-image": "url('Logos for search project/aci - color.png')"});	
+				$('.scholarshipProgram')
 			}
 			else if ($('#programType').val() == "loanProgram") {
-				$('.loanProgram').css({"background-image": "url('Logos for search project/aci - color.png')"});	
+				$('.loanProgram')
 			}
 		}
 
 		function getLevel() {
 			if ($('#educationLevel').val() == "searchAll") {
-				$('.k12, .highSchool').css({"background-image": "url('Logos for search project/aci - color.png')"});
+				$('.k12, .highSchool')
 			}
 			else if ($('#educationLevel').val() == "k-12") {
-				$('.k12').css({"background-image": "url('Logos for search project/aci - color.png')"});
+				$('.k12')
 			}
 			else if ($('#educationLevel').val() == "highSchool") {
-				$('.highSchool').css({"background-image": "url('Logos for search project/aci - color.png')"});
+				$('.highSchool')
 			}
-		}
-
-		function testcss() {
-			var test1 = {"background-image": "url('Logos for search project/aci - color.png')"};
-			var test2 = {"background-image": "url('Logos for search project/acm - color.png')"};
-			console.log(this);
-			
 		}
 
 		
@@ -46,6 +50,7 @@ $(document).ready(function() {
 			getLevel();
 
 		});
+		setIcons();
 	}
 	chooseType();
 });
