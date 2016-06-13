@@ -16,7 +16,7 @@ $(document).ready(function() {
 		}
 
 		function getLevel() {
-			if ($('#programType').val() == "searchAll") {
+			if ($('#educationLevel').val() == "searchAll") {
 				$('.k12, .highSchool').addClass('inColor');
 			}
 			else if ($('#educationLevel').val() == "k-12") {
