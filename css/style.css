@@ -6,29 +6,27 @@ div {
 .aci, .acm, .afe {
 	height: 60px;
 	background-repeat: no-repeat;
-}
-
-img {
-	height: 50px;
+	background-position: center;
+	background-size: auto 50px;
 }
 
 .container {
 	margin: 0 auto auto;
 }
 
-.aci, .inColor {
+.aci.inColor {
 	background-image: url("../images/aci-color.png");
 }
 .aci {
 	background-image: url("../images/aci.png");
 }
-.acm, .inColor {
+.acm.inColor {
 	background-image: url("../images/acm-color.png");
 }
 .acm {
 	background-image: url("../images/acm.png");
 }
-.afe, .inColor {
+.afe.inColor {
 	background-image: url("../images/afe-color.png");
 }
 .afe {

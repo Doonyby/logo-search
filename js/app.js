@@ -4,25 +4,31 @@ $(document).ready(function() {
 
 
 		function getType() {
-
-			if ($('#programType').val() == "scholarshipProgram") {
+			if ($('#programType').val() == "searchAll") {
+				$('.scholarshipProgram, .loanProgram').addClass('inColor');
+			}
+			else if ($('#programType').val() == "scholarshipProgram") {
 				$('.scholarshipProgram').addClass('inColor');
 			}
 			else if ($('#programType').val() == "loanProgram") {
-				$('.loanProgram').find('.aciImg').replaceWith('<img src="Logos for search project/aci - color.png">');
+				$('.loanProgram').addClass('inColor');
 			}
 		}
 
 		function getLevel() {
-			if ($('#educationLevel').val() == "k-12") {
-				$('.k12')
+			if ($('#programType').val() == "searchAll") {
+				$('.k12, .highSchool').addClass('inColor');
+			}
+			else if ($('#educationLevel').val() == "k-12") {
+				$('.k12').addClass('inColor');
 			}
 			else if ($('#educationLevel').val() == "highSchool") {
-				$('.highSchool')
+				$('.highSchool').addClass('inColor');
 			}
 		}
 	
 		$('#searchButton').click(function () {
+			$('.k12, .highSchool, .scholarshipProgram, .loanProgram').removeClass('inColor');
 			getType();
 			getLevel();
 
